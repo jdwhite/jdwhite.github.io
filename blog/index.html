@@ -1,0 +1,23 @@
+---
+layout: default
+title: Jason White::Blog Posts
+---
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+</head>
+<body>
+Index of posts:
+<P>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url}}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</body>
+</html>
+
